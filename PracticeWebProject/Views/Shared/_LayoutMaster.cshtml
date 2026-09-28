@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"]</title>
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/css/stylecss.css" /> 
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="bg-white border-bottom shadow-sm">
+
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center py-3">
+
+                <!-- LOGO -->
+
+                <div>
+                    <a href="/guest/home"
+                       class="text-dark text-decoration-none fs-2 fw-bold">
+                        Logo
+                    </a>
+                </div>
+
+
+                <!-- MENU -->
+
+                <nav>
+
+                    <ul class="list-unstyled d-flex align-items-center gap-4 mb-0">
+
+                        <li>
+                            <a href="/guest/home"
+                               class="text-decoration-none text-primary">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/guest/aboutus"
+                               class="text-decoration-none text-primary">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/guest/services"
+                               class="text-decoration-none text-primary">
+                                Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/guest/gallery"
+                               class="text-decoration-none text-primary">
+                                Gallery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/guest/contactus"
+                               class="text-decoration-none text-primary">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        @RenderBody()
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="bg-dark text-white mt-5">
+
+        <!-- Footer Main -->
+
+        <div class="container py-5">
+
+            <div class="row g-4">
+
+                <!-- Column 1 -->
+
+                <div class="col-md-6">
+
+                    <h2 class="text-primary fw-bold mb-3">
+                        Logo
+                    </h2>
+
+                    <p class="text-secondary mb-0">
+                        We create modern and responsive websites
+                        using the latest web technologies.
+                    </p>
+
+                </div>
+
+
+                <!-- Column 2 -->
+
+                <div class="col-md-3">
+
+                    <h3 class="h5 mb-3">
+                        Quick Links
+                    </h3>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-2">
+                            <a href="/guest/home"
+                               class="text-secondary text-decoration-none">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="/guest/aboutus"
+                               class="text-secondary text-decoration-none">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="/guest/services"
+                               class="text-secondary text-decoration-none">
+                                Services
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="/guest/gallery"
+                               class="text-secondary text-decoration-none">
+                                Gallery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/guest/contactus"
+                               class="text-secondary text-decoration-none">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Column 3 -->
+
+                <div class="col-md-3">
+
+                    <h3 class="h5 mb-3">
+                        Contact
+                    </h3>
+
+                    <p class="text-secondary mb-2">
+                        📧 example@gmail.com
+                    </p>
+
+                    <p class="text-secondary mb-2">
+                        📞 +91 98765 43210
+                    </p>
+
+                    <p class="text-secondary mb-0">
+                        📍 Maharashtra, India
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+
+        <div class="border-top border-secondary">
+
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center py-3">
+
+                    <p class="text-secondary mb-0">
+                        © 2026 Logo. All Rights Reserved.
+                    </p>
+
+                    <p class="text-secondary mb-0">
+                        Designed & Developed with ❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
